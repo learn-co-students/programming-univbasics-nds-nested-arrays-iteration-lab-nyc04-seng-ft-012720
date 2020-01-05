@@ -22,15 +22,30 @@ def find_greater_pair(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
-  result = []
+#   result = []
 
-  i = 0
-  while i < src.length do
-    result <<  (src[i][0] > src[i][1] ? src[i][0] : src[i][1])
-    i += 1
+#   i = 0
+#   while i < src.length do
+#     result <<  (src[i][0] > src[i][1] ? src[i][0] : src[i][1])
+#     i += 1
+#   end
+
+#   result
+# end
+
+current = 0
+
+index = 0
+
+while index < src.length do
+  
+  if src[index] > current
+
+    current = src[index]
   end
+  index += 1
 
-  result
+
 end
 
 
